@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block title %}{{title}}{% endblock %}
+{% block pagename %}
+ {{ super() }}
+{% endblock %}
+{% block content %}
+<div class="pagecontent">
+
+
+    <h3>Contact Me</h3>
+    <!-- <form class ="contact-form">
+        <div>
+            <label>What is your name?</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label>What is your email?</label>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <label>What is your message?</label>
+            <textarea  name="topic"></textarea>
+        </div>
+        <div class="submit-container">
+            <input type="submit" value="Submit"  class="submit"/>
+        </div>
+        
+    </form> -->
+    <form action="" method="post">
+
+        {{ form.csrf_token }}
+        
+        {% for field in form if field.name != "csrf_token" and field.name != "submit" %}
+        <div>
+            <label>{{ field.label()}}</label>
+            {{ field }}{% for error in field.errors%}
+                {% if error %}
+                    <div class="error">
+                        {{ error }}
+                    </div>{% endif %}{%endfor%}       
+        </div>
+        {% endfor %}
+            <input type="submit" value="Submit"  class="submit"/>
+        
+    </form>
+</div>
+{% endblock %}

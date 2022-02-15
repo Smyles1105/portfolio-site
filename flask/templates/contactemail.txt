@@ -1,0 +1,6 @@
+There was a new contact form sent in from your portfolio site.
+The name entered was {{ name }}.
+The email they listed was {{email}}
+Their message was the following:
+
+{{message}}

@@ -1,0 +1,144 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    
+
+}
+.navbutton {
+    padding: 0.2rem;
+    margin: 0.2rem;
+    font-size: 1.6rem;
+    text-decoration-color: #F1A208;
+    
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+    
+    
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: #F1A208;
+}
+
+
+h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+    align-self: center;
+}
+h3 {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    margin: 1rem;
+}
+.contact-form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #02111f;
+    justify-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+form {
+    padding: 1rem;
+}
+form div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    
+}
+
+form label {
+    margin: 0.1rem;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    
+}
+
+form div textarea, form div input{
+    background-color: #152331;
+    color: whitesmoke;
+    border: none;
+    border-bottom: 0.2rem dashed #66AD5C;
+    margin:0.1rem;
+    font-size: 1.25rem;
+    
+}
+
+form div input:focus, form div textarea:focus{
+    outline: none;
+    border: 0.2rem solid #66AD5C
+}
+
+label {
+    margin: 0rem;
+}
+
+div.pagecontent {
+    width: 80vw;
+}
+
+.submit {
+    background-color: #F1A208;
+    color: black;
+    font-size: 2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+    justify-self: left;
+    border-bottom: 0.2rem dashed #f37c05;
+    margin: 1rem;
+}
+
+.submit:hover {
+border-bottom: 0.2rem solid #f37c05;
+
+}
+.submit:focus {
+    border: 0.2rem solid #f37c05;
+
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+footer * {
+    position: relative;
+}
+footer a {
+    font-family: serif;
+    font-size: 1.6rem;
+    color: #66AD5C;
+    text-decoration: 0.2rem #F1A208 underline;
+}
+footer a:hover {
+    text-decoration: 0.2rem #f37c05 underline;
+}
+footer a:focus {
+    text-decoration: 0.3rem #f37c05 underline;
+}
+.error{
+    color: red;
+    margin: 0.1rem;
+    font-size: 0.8rem;
+}
+* {
+    padding: 0.25rem;
+}

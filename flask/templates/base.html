@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet"  href="{{ url_for('static', filename='styles.css') }}">
+{% block pagename %}
+<title>{% block title %}{% endblock %} | {{ name }}</title>
+{% endblock %}
+<head>
+    <nav class="navbar">
+        <div class="navbutton"><a href="/">Home</a></div>
+        <div class="navbutton"><a href="/posts">Posts</a></div>
+        <div class="navbutton"><a href="/about">About Me</a></div>
+        <div class="navbutton"><a href="/projects">Projects</a></div>
+        <div class="navbutton"><a href="/contact">Contact Me</a></div>
+    </nav>
+</head>
+<body>
+    {% block content %}{% endblock %}
+    
+</body>
+<footer>
+    <label>Socials</label>
+    <a href="https://github.com/Smyles1105">Github</a>
+</footer>

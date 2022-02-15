@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}{{title}}{% endblock %}
+{% block pagename %}
+ {{ super() }}
+{% endblock %}
+{% block content %}
+    <h1>{{ name }}</h1>
+{% endblock %}
